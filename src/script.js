@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real-Time Script Generator</title>
-    <link rel="stylesheet" href="./src/reset.css">
-    <link rel="stylesheet" href="./src/style.css">
-    <script type="text/javascript" defer src="./src/script.js"></script>
-</head>
-<body>
 
-    <h2>Script Generator</h2>
-
-    <div class="form-group"><label>User Name:</label><input type="text" id="userName" oninput="updateScript()"></div>
-    <div class="form-group"><label>Venue:</label><input type="text" id="venue" oninput="updateScript()"></div>
-    <div class="form-group"><label>Location:</label><input type="text" id="location" oninput="updateScript()"></div>
-    <div class="form-group"><label>Time:</label><input type="text" id="time" oninput="updateScript()"></div>
-    <div class="form-group"><label>Host:</label><input type="text" id="host" oninput="updateScript()"></div>
-
-    <div id="outputArea">
-        <label>Generated Script:</label>
-        <textarea id="scriptDisplay" readonly></textarea>
-        
-        <div class="btn-group">
-            <button onclick="copyToClipboard()">Copy to Clipboard</button>
-            <button class="edit-btn" id="editBtn" onclick="toggleEdit()">Enable Edit</button>
-        </div>
-    </div>
-    <!--
-    <script>
         function updateScript() {
             const userName = document.getElementById('userName').value || "[User Name]";
             const venue = document.getElementById('venue').value || "<Venue>";
@@ -65,7 +35,3 @@
 
         // Initialize display on load
         updateScript();
-    </script>
-      -->
-</body>
-</html>
